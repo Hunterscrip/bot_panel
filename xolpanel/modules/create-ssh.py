@@ -47,12 +47,12 @@ Button.inline("• 60 Day •","60")]])
 `GET / HTTP/1.1[crlf]Host: {DOMAIN}[crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]`
 **━━━━━━━━━━━━━━━━**
 **» 🗓Expired Until:** `{later}`
-**» 🤖@ProjectDedi_bot**
+**» 🤖@Rmblvpn**
 **━━━━━━━━━━━━━━━━**
 """
 			inline = [
-[Button.url("[ GitHub Repo ]","github.com/akudedi"),
-Button.url("[ Channel ]","t.me/HAYOSIASTORE")]]
+[Button.url("[ Grup tele ]","t.me/configopok"),
+Button.url("[ Channel ]","t.me/rmblvpn")]]
 			await event.respond(msg,buttons=inline)
 	chat = event.chat_id
 	sender = await event.get_sender()
