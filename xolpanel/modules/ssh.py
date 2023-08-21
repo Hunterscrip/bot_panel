@@ -4,12 +4,12 @@ from xolpanel import *
 async def ssh(event):
 	async def ssh_(event):
 		inline = [
-[Button.inline("[ 🛒Trial SSH ]","trial-ssh"),
-Button.inline("[ 🛒Create SSH ]","create-ssh")],
-[Button.inline("[ 🛒Delete SSH ]","delete-ssh"),
-Button.inline("[ 🛒Check Login SSH ]","login-ssh")],
-[Button.inline("[ 🛒Show All User SSH ]","show-ssh")],
-[Button.inline("‹ 🔙Main Menu ›","menu")]]
+[Button.inline("[ 👾Trial SSH ]","trial-ssh"),
+Button.inline("[ 👾Create SSH ]","create-ssh")],
+[Button.inline("[ 👾Delete SSH ]","delete-ssh"),
+Button.inline("[ 👾Check Login SSH ]","login-ssh")],
+[Button.inline("[ 👾Show All User SSH ]","show-ssh")],
+[Button.inline("‹ ⏪Main Menu ›","menu")]]
 		z = requests.get(f"http://ip-api.com/json/?fields=country,region,city,timezone,isp").json()
 		msg = f"""
 **━━━━━━━━━━━━━━━━**
@@ -19,7 +19,7 @@ Button.inline("[ 🛒Check Login SSH ]","login-ssh")],
 **» Hostname/IP:** `{DOMAIN}`
 **» ISP:** `{z["isp"]}`
 **» Country:** `{z["country"]}`
-**» 🤖@ProjectDedi_bot**
+**» 🤖@Rmblvpn**
 **━━━━━━━━━━━━━━━━**
 """
 		await event.edit(msg,buttons=inline)
