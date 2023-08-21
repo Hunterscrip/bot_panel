@@ -6,8 +6,8 @@ async def menu(event):
 	inline = [
 [Button.inline("[ SSH PANEL ]","ssh"),
 Button.inline("[ VPS INFO ]","info")],
-[Button.url("[ GitHub Repo ]","https://github.com/akudedi"),
-Button.url("[ Telegram Channel ]","https://t.me/HAYOSIASTORE")]]
+[Button.url("[ GitHub Repo ]","https://github.com/kepo"),
+Button.url("[ Telegram Channel ]","https://t.me/rmblvpn")]]
 	sender = await event.get_sender()
 	val = valid(str(sender.id))
 	if val == "false":
@@ -20,7 +20,7 @@ Button.url("[ Telegram Channel ]","https://t.me/HAYOSIASTORE")]]
 **━━━━━━━━━━━━━━━━**
 **⟨ 👨‍💻Admin Panel Menu ⟩**
 **━━━━━━━━━━━━━━━━**
-**» 🎭Bot By DeadrzBOT**
+**» ☢️Bot By Rmblvpn**
 **» 🤖Bot Version:** `v2.0`
 **» 🤖Running Since:** `{uptime}`
 **━━━━━━━━━━━━━━━━**
