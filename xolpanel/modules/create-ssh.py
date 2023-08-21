@@ -28,24 +28,47 @@ Button.inline("• 60 Day •","60")]])
 			today = DT.date.today()
 			later = today + DT.timedelta(days=int(exp))
 			msg = f"""
-**━━━━━━━━━━━━━━━━**
-**⟨ SSH Account ⟩**
-**━━━━━━━━━━━━━━━━**
-**» Host:** `{DOMAIN}`
-**» Username:** `{user.strip()}`
-**» Password:** `{pw.strip()}`
-**━━━━━━━━━━━━━━━━**
-**» OpenSSH:** `22`
-**» SSL/TLS:** `222`, `777`, `443`
-**» Dropbear:** `109`,`143`
-**» WS SSL:** `443`
-**» WS HTTP:** `80`, `2082`
-**» Squid:** `8080`, `3128` `(Limit To IP Server)`
-**» BadVPN UDPGW:** `7100` **-** `7300`
-**━━━━━━━━━━━━━━━━**
-**⟨ Payload WS CDN ⟩**
-`GET / HTTP/1.1[crlf]Host: {DOMAIN}[crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]`
-**━━━━━━━━━━━━━━━━**
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
+<code>  SSH Premium Account   </code>
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
+<code>Username        : </code> <code>$Login</code>
+<code>Password        : </code> <code>$Pass</code>
+<code>Expired          : </code> <code>$exp</code>
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
+<code>IP               : </code> <code>$IP</code>
+<code>ISP              : </code> <code>$ISP </code>
+<code>CITY             : </code> <code>$CITY</code>
+<code>Host             : </code> <code>$domen</code>
+<code>User Limit        : </code> <code>${iplim} IP</code>
+<code>Port OpenSSH    : </code> <code>22</code>
+<code>Port Dropbear    : </code> <code>109, 143</code>
+<code>Port SSH WS     : </code> <code>80, 8080</code>
+<code>Port SSH SSL WS : </code> <code>443</code>
+<code>Port SSL/TLS     : </code> <code>8443,8880</code>
+<code>Port OVPN WS SSL : </code> <code>2086</code>
+<code>Port OVPN SSL    : </code> <code>990</code>
+<code>Port OVPN TCP    : </code> <code>1194</code>
+<code>Port OVPN UDP    : </code> <code>2200</code>
+<code>Proxy Squid        : </code> <code>3128</code>
+<code>BadVPN UDP       : </code> <code>7100, 7300, 7300</code>
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
+<code>SSH UDP VIRAL :</code> <code>$domen:1-65535@$Login:$Pass</code>
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
+<code>HTTP COSTUM :</code> <code>$domen:80@$Login:$Pass</code>
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
+<code>Host Slowdns    : </code> <code>$sldomain</code>
+<code>Port Slowdns     : </code> <code>80, 443, 53</code> 
+<code>Pub Key          : </code> <code> $slkey</code>
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
+<code>Payload WS/WSS   : </code>
+<code>GET / HTTP/1.1[crlf]Host: ${domen}[crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: ws[crlf][crlf]</code>
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
+<code>OpenVPN SSL      : </code> http://$domen:89/ssl.ovpn
+<code>OpenVPN TCP      : </code> http://$domen:89/tcp.ovpn
+<code>OpenVPN UDP      : </code> http://$domen:89/udp.ovpn
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
+<code>Save Link Account: </code>http://$domen:89/ssh-$Login.txt
+<code>◇━━━━━━━━━━━━━━━━━◇</code>
 **» 🗓Expired Until:** `{later}`
 **» 🤖@Rmblvpn**
 **━━━━━━━━━━━━━━━━**
