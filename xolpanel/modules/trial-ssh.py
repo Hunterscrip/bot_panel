@@ -34,12 +34,12 @@ async def trial_ssh(event):
 `GET / HTTP/1.1[crlf]Host: {DOMAIN}[crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]`
 **━━━━━━━━━━━━━━━━**
 **» 🗓Expired Until:** `{later}`
-**» 🤖@KytProject**
+**» 🤖@Rmblvpn**
 **━━━━━━━━━━━━━━━━**
 """
 			inline = [
-[Button.url("[ GitHub Repo ]","github.com/myridwan"),
-Button.url("[ Channel ]","t.me/r1f4n_1122")]]
+[Button.url("[ GitHub Repo ]","github.com/kepo"),
+Button.url("[ Channel ]","t.me/configopok")]]
 			await event.respond(msg,buttons=inline)
 	chat = event.chat_id
 	sender = await event.get_sender()
