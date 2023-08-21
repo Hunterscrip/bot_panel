@@ -1,0 +1,4 @@
+BOT_TOKEN="ANU" # get this value from @BotFather, required
+ADMIN="6969" # your telegram ID, required
+DOMAIN="DOMAIN.SEX" # your VPS domain, required
+
