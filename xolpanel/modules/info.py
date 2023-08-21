@@ -4,10 +4,10 @@ from xolpanel import *
 async def info(event):
 	async def info_(event):
 		inline = [
-[Button.inline("[ Facebook ]","https://facebook.com/Ronaldhet"),
-Button.inline("[ Telegram ]","https://t.me/Putri24V")],
-[Button.url("[ GitHub Repo ]","https://github.com/akudedi"),
-Button.url("[ Telegram Channel ]","https://t.me/HAYOSIASTORE")]]
+[Button.inline("[ Facebook ]","https://facebook.com/kepo"),
+Button.inline("[ Telegram ]","https://t.me/rmblvpn")],
+[Button.url("[ GitHub Repo ]","https://github.com/kepo"),
+Button.url("[ Telegram grup ]","https://t.me/configopok")]]
 		z = requests.get(f"http://ip-api.com/json/?fields=country,region,city,timezone,isp").json()
 		msg = f"""
 **━━━━━━━━━━━━━━━━**
@@ -17,7 +17,7 @@ Button.url("[ Telegram Channel ]","https://t.me/HAYOSIASTORE")]]
 **» Hostname/IP:** `{DOMAIN}`
 **» ISP:** `{z["isp"]}`
 **» Country:** `{z["country"]}`
-**» 🤖@ProjectDedi_bot**
+**» 🤖@rmblvpn**
 **━━━━━━━━━━━━━━━━**
 """
 		await event.edit(msg,buttons=inline)
